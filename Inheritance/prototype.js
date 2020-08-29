@@ -1,19 +1,20 @@
 //A more complicated object 
 //Jake Levy
 //Aug 2020
-var simple = function(name){
+
+//Class notation is "syntactic sugar" (convenient) used to hide JS prototyping
+//But "under the hood" all defined JS objects are prototype based
+class simple{
+    //classes may only have ONE constuctor function
+    constructor(name){
     this.name = name;
-};
+    }
 
-//opening up the prototype allows us to add functionality to the object
-simple.prototype = {
-
-    addedFunction: function(){
+//Notice that the addedFunction is just listed inside the class definition
+    addedFunction(){
 	console.log(`Hi my name is ${this.name}`);
 
     }
-};
-		    
-//Now any object made with this class constructor will have the function
-//addedFunction and a name property
+}
+
 module.exports = simple;
