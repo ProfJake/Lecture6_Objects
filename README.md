@@ -2,7 +2,7 @@ In this folder:
 
     simpleObjects - directory of files for simple Object definitions
 
-    prototype -  directory of files for building an object definition with a
-    	      	 prototype
+    classes -  directory of files for building an object definition with class
+    notation
 
-    Inheritance -  directory of files demonstrating prototype inheritance
+    Inheritance -  directory of files demonstrating "class" inheritance
