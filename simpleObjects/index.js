@@ -21,3 +21,4 @@ simpleObject.addedProperty = function(){
 }
 
 simpleObject.addedProperty();
+//simpleObject.sayName();
