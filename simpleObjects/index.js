@@ -15,10 +15,16 @@ console.log(simpleObject.name);
 //In JS you can create and add a function to a single instance of an object
 //It just adds another K-V pair to the object.  However this time, Value is
 //going to be a pointer to a function.
+
+//Students familiar with Design Patterns should recognize similarities to
+//the "Decorator" design.  We are "decorating" a single instance with a
+// new function.  No other instances will have this specific function
+//unless explicitly added.
 simpleObject.addedProperty = function(){
     //An example of a "Template String", how JS does string interpolation
     console.log(`My name is ${this.name}`);
 }
+
 
 simpleObject.addedProperty();
 //simpleObject.sayName();
