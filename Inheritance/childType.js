@@ -5,7 +5,7 @@ Aug 2020
 
 Even though Java has released ES6 Class notation, its just some syntactic 
 sugar.  JavaScript is a "prototype" based language.  */
-var superClass = require("./prototype.js");
+var superClass = require("./class.js");
 
 //NOTE: "name" is undefined for the child class.  It was NOT made part of the
 //prototype so child can't find it.
@@ -24,10 +24,10 @@ class child extends superClass{
 
     addedFunction(){
 
-	super.addedFunction();
+	super.addedFunction(); //prints "hi my name is..."
 
 	//But notice how this object gets the inherited name
-	console.log(`My last name is ${this.name} ${this.LastName}`);
+	console.log(`My full name is ${this.name} ${this.LastName}`);
     }
 }
 
